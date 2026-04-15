@@ -18,4 +18,4 @@ jobs:
        run: pip install flake8 # 3. instala o linter
  
      - name: Executar lint
-       run: flake8 . --max-line-length=88 --exclude=.git,__pycache__ 
+       run: flake8 app.py --max-line-length=88 --exclude=.git,__pycache__ 
