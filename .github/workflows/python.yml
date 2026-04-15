@@ -19,6 +19,6 @@ jobs:
  
      - name: Executar lint
        run: |
-            flake8 . \ 
+         flake8 . \ 
              --max-line-length=88 \ 
              --exclude=.git,__pycache__ 
