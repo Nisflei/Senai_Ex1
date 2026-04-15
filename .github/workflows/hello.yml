@@ -5,4 +5,4 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Dizer olá
-     run: echo "Olá, Mundo! Workflow funcionando! 🎉"
+       run: echo "Olá, Mundo! Workflow funcionando! 🎉"
