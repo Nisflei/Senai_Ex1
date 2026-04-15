@@ -1,0 +1,8 @@
+name: Hello World
+on: [push]
+jobs:
+ ola:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Dizer olá
+     run: echo "Olá, Mundo! Workflow funcionando! 🎉"
