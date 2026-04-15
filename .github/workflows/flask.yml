@@ -14,11 +14,8 @@ jobs:
        pip install -r requirements.txt
        pip install pytest pytest-cov
    - name: Executar testes com cobertura
-     run: |
-       pytest . \
-         --cov=app \ # gera relatório de cobertura
-         --cov-report=xml \ # salva em coverage.xml
-         --junitxml=report.xml # salva resultado dos testes
+     run: pytest . --cov=app --cov-report=xml --junitxml=report.xml 
+     
    - name: Publicar relatório de testes
      uses: actions/upload-artifact@v4 # salva para download
      if: always() # roda mesmo se testes falharem
