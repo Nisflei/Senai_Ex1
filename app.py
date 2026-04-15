@@ -1,1 +1,0 @@
-print("Somente Python")
