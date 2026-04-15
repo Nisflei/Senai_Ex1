@@ -15,7 +15,7 @@ jobs:
        pip install pytest pytest-cov
    - name: Executar testes com cobertura
      run: |
-       pytest tests/ \
+       pytest . \
          --cov=app \ # gera relatório de cobertura
          --cov-report=xml \ # salva em coverage.xml
          --junitxml=report.xml # salva resultado dos testes
